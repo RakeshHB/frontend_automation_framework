@@ -1,8 +1,8 @@
 import Login from './pageObjects/login';
 
 const login = new Login();
-describe('login scenario', () => {
-  it('given an user with valid credentials, he should be logged into https://amazon.in successfully', () => {
+describe('01 login scenario', () => {
+  it('01 given an user with valid credentials, he should be logged into https://amazon.in successfully', () => {
     cy.visit({url: Cypress.env('BASE_URL'), failOnStatusCode: false})
     // cy.task('hello', { greeting: 'Hello', name: 'World' })
     login.loginDownArrowButtonOnHomePage().click();
