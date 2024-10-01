@@ -1,5 +1,5 @@
 import Login from './pageObjects/login';
-import example from "./../fixtures/example"
+import example from "./../fixtures/example.json"
 
 const login = new Login();
 describe('01 login scenario', () => {
