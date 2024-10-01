@@ -17,20 +17,10 @@
 import './commands'
 import 'cypress-mochawesome-reporter/register';
 
-require('cypress-terminal-report/src/installLogsCollector')({
-        collectTypes:
-            [
-                'cons:log',
-                'cons:info',
-                'cons:warn',
-                'cons:error',
-                'cy:log',
-                'cy:request',
-                'cy:xhr',
-                'cy:command'
-            ]
-    }
-)
-
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+require('cypress-terminal-report/src/installLogsCollector')({
+    // Log console output only
+    collectTypes: ["cons:log", "cons:info", "cons:warn", "cons:error", "cy:command", "cy:log", "cy:request", "cy:xhr",],
+});

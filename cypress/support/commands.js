@@ -23,7 +23,6 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
-
 Cypress.Commands.add('signOut', () => {
-    cy.visit("/gp/flex/sign-out.html?action=sign-out")
+    cy.visit({url: '/gp/flex/sign-out.html?action=sign-out', failOnStatusCode: false});
 })
