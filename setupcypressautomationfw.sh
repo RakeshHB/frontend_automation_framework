@@ -3,6 +3,8 @@
 mkdir automation_framework
 cd automation_framework
 npm init -y
-mkdir /tmp/cypress_cache
-export CYPRESS_CACHE_FOLDER="/tmp/cypress_cache"
+#mkdir /tmp/cypress_cache
+mkdir /Users/rakesh/cypress_cache
+#export CYPRESS_CACHE_FOLDER="/tmp/cypress_cache"
+export CYPRESS_CACHE_FOLDER="/Users/rakesh/cypress_cache"
 npm install cypress --save-dev

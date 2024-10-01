@@ -1,4 +1,5 @@
 import Login from './pageObjects/login';
+import example from "./../fixtures/example"
 
 const login = new Login();
 describe('01 login scenario', () => {
@@ -19,5 +20,6 @@ describe('01 login scenario', () => {
     cy.log('Log')
     cy.signOut();
     cy.contains('Sign');
+    cy.log(example.body);
   })
 })

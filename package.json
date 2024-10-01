@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf cypress-tests",
+    "clean": "rm -rf cypress-tests cypress/downloads",
     "cypress:open": "cypress install && cypress open --browser chrome --e2e",
     "self-purchase-us-part-1": "cypress install && cypress run --spec cypress/e2e/spec.cy.js --browser chrome --e2e"
   },
