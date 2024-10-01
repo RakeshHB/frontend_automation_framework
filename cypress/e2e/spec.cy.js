@@ -5,7 +5,7 @@ const login = new Login();
 describe('01 login scenario', () => {
   it('01 given an user with valid credentials, he should be logged into https://amazon.in successfully', () => {
     cy.visit({url: Cypress.env('BASE_URL'), failOnStatusCode: false})
-    // cy.task('hello', { greeting: 'Hello', name: 'World' })
+    // cy.task('sleep', { time: 20000 })
     login.loginDownArrowButtonOnHomePage().click();
     login.email().type(Cypress.env('EMAIL'))
     login.continueButton().click()

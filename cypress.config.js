@@ -44,7 +44,7 @@ module.exports = defineConfig({
       // implement node event listeners here
 
       on('task', {
-        hello: async ({ greeting, name }) => {
+        hello: async ({ time }) => {
           let val = await new Promise((resolve) => setTimeout(resolve, 2000));
           val = null;
           return null
