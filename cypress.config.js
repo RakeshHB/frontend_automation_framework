@@ -36,6 +36,8 @@ module.exports = defineConfig({
   video: true,
   env: {
     BASE_URL: '',
+    EMAIL: '',
+    PASSWORD: '',
   },
   e2e: {
     setupNodeEvents(on, config) {
