@@ -45,7 +45,7 @@ module.exports = defineConfig({
 
       on('task', {
         hello: async ({ time }) => {
-          let val = await new Promise((resolve) => setTimeout(resolve, 2000));
+          let val = await new Promise((resolve) => setTimeout(resolve, time));
           val = null;
           return null
         },
