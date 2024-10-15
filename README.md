@@ -1,4 +1,4 @@
-# automation_framework
+# frontend_automation_framework
 ## Instructions to run tests
 
 ```

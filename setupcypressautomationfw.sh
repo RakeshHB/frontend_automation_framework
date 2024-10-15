@@ -1,7 +1,7 @@
 #install node which installs npm. To verify run 'node -v && npm -v'
 #brew install node@20
-mkdir automation_framework
-cd automation_framework
+mkdir frontend_automation_framework
+cd frontend_automation_framework
 npm init -y
 #mkdir /tmp/cypress_cache
 mkdir /Users/rakesh/cypress_cache
